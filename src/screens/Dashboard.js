@@ -27,7 +27,7 @@ class Dashboard extends React.Component {
     return (!isEmpty(userInfo) && 
       <Row className="Dashboard m-3">
         <Col sm={12}>
-          <Button color="danger" onClick={this.logoutHandler}>Logout</Button>
+          <Button color="danger" className="float-right" onClick={this.logoutHandler}>Logout</Button>
         </Col>
         {userInfo.map((item, index) =>
           <Col md={3} sm={12} key={index}>
