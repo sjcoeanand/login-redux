@@ -1,6 +1,5 @@
 import * as ActionType from '../actions/user';
 import { get } from 'lodash';
-export const SUCCESS_LOGIN_INFO = 'SUCCESS_LOGIN_INFO';
 
 export function userInfo(state = '', action) {  
   switch (action.type) {

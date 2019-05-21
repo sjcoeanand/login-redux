@@ -12,7 +12,7 @@ class Dashboard extends React.Component {
     const userdetails = localStorage.getItem('userLoggedIn');
     console.log("asasasasa", userdetails);
     !userdetails && history.push('/');
-    this.props.setUserInfo(info);
+    this.props.setUserInfoReducer(info);
   }
 
   logoutHandler = () => {
@@ -55,7 +55,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    setUserInfo: (info) => dispatch(setUserInfo(info)),
+    setUserInfoReducer: (info) => dispatch(setUserInfo(info)),
   };
 };
 

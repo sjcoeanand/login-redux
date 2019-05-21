@@ -5,5 +5,4 @@ export function setUserInfo(data) {
     type: SUCCESS_LOGIN_INFO,
     payload: data
   };
-  
 }
